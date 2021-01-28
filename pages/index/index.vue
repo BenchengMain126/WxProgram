@@ -85,7 +85,7 @@
 						text: "签名板",
 						desc: '签名板。',
 						type: 'xcp',
-						url: "../signatures/signatures",
+						url: "../sign/signatures",
 					}
 				]
 			}

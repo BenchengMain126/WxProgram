@@ -1,0 +1,77 @@
+{
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "示例工程首页",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/signatures/signatures",
+			"style": {
+				"navigationBarTitleText": "签名板",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "pages/sign/",
+		"pages": [{
+				"path": "signup",
+				"style": {
+					"navigationBarTitleText": "签到"
+				}
+			},
+			{
+				"path": "select",
+				"style": {
+					"navigationBarTitleText": "位置微调"
+				}
+			},
+			{
+				"path": "search",
+				"style": {
+					"navigationBarTitleText": "搜索"
+				}
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "工程示例",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"usingComponents": {
+			"van-info": "/wxcomponents/vant/dist/info/index",
+			"van-popup": "/wxcomponents/vant/dist/popup/index",
+			"van-button": "/wxcomponents/vant/dist/button/index",
+			"van-dialog": "/wxcomponents/vant/dist/dialog/index",
+			"van-toast": "/wxcomponents/vant/dist/toast/index",
+			"van-field": "/wxcomponents/vant/dist/field/index",
+			// "van-radio": "/wxcomponents/vant/dist/radio/index",
+			// "van-radio-group": "/wxcomponents/vant/dist/radio-group/index",
+			"van-overlay": "/wxcomponents/vant/dist/overlay/index",
+			"van-search": "/wxcomponents/vant/dist/search/index",
+			"van-loading": "/wxcomponents/vant/dist/loading/index",
+			// "van-picker": "/wxcomponents/vant/dist/picker/index",
+			"van-icon": "/wxcomponents/vant/dist/icon/index",
+			"van-image": "/wxcomponents/vant/dist/image/index",
+			// "van-steps": "/wxcomponents/vant/dist/steps/index",
+			"van-cell-group": "/wxcomponents/vant/dist/cell-group/index",
+			"van-cell": "/wxcomponents/vant/dist/cell/index",
+			// "van-panel": "/wxcomponents/vant/dist/panel/index",
+			// "van-divider": "/wxcomponents/vant/dist/divider/index",
+			// "van-count-down": "/wxcomponents/vant/dist/count-down/index",
+			// "van-notify": "/wxcomponents/vant/dist/notify/index",
+			// "van-action-sheet": "/wxcomponents/vant/dist/action-sheet/index",
+			// "van-datetime-picker": "/wxcomponents/vant/dist/datetime-picker/index",
+			// "van-checkbox": "/wxcomponents/vant/dist/checkbox/index",
+			// "van-checkbox-group": "/wxcomponents/vant/dist/checkbox-group/index",
+			// "van-notice-bar": "/wxcomponents/vant/dist/notice-bar/index",
+			"van-collapse": "/wxcomponents/vant/dist/collapse/index",
+			"van-collapse-item": "/wxcomponents/vant/dist/collapse-item/index",
+			"van-tabs": "/wxcomponents/vant/dist/tabs/index",
+			"van-tab": "/wxcomponents/vant/dist/tab/index"
+		}
+	}
+}

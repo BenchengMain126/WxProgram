@@ -2,7 +2,6 @@
 	"pages": [{
 			"path": "pages/index/index",
 			"style": {
-				// "navigationBarTitleText": "首页",
 				"enablePullDownRefresh": false
 			}
 		}
@@ -10,7 +9,6 @@
             "path" : "pages/chat/chat",
             "style" :                                                                                    
             {
-                // "navigationBarTitleText": "通讯",
                 "enablePullDownRefresh": false
             }
         }
@@ -18,9 +16,17 @@
             "path" : "pages/mine/mine",
             "style" :                                                                                    
             {
-                // "navigationBarTitleText": "我的",
                 "enablePullDownRefresh": false
             }
+        }
+        ,{
+            "path" : "pages/scan/scan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "扫码录入",
+                "enablePullDownRefresh": false
+            }
+            
         }
     ],
 	"subPackages": [{
@@ -54,9 +60,13 @@
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "工程示例",
+		"navigationBarTitleText": "高效办公",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8",
+		// "navigationBarTextStyle": "black",
+		// "navigationBarTitleText": "高效办公",
+		// "navigationBarBackgroundColor": "#FFFFFF",
+		// "backgroundColor": "#FFFFFF",
 		"usingComponents": {
 			"van-info": "/wxcomponents/vant/dist/info/index",
 			"van-popup": "/wxcomponents/vant/dist/popup/index",
@@ -64,26 +74,26 @@
 			"van-dialog": "/wxcomponents/vant/dist/dialog/index",
 			"van-toast": "/wxcomponents/vant/dist/toast/index",
 			"van-field": "/wxcomponents/vant/dist/field/index",
-			// "van-radio": "/wxcomponents/vant/dist/radio/index",
-			// "van-radio-group": "/wxcomponents/vant/dist/radio-group/index",
+			"van-radio": "/wxcomponents/vant/dist/radio/index",
+			"van-radio-group": "/wxcomponents/vant/dist/radio-group/index",
 			"van-overlay": "/wxcomponents/vant/dist/overlay/index",
 			"van-search": "/wxcomponents/vant/dist/search/index",
 			"van-loading": "/wxcomponents/vant/dist/loading/index",
-			// "van-picker": "/wxcomponents/vant/dist/picker/index",
+			"van-picker": "/wxcomponents/vant/dist/picker/index",
 			"van-icon": "/wxcomponents/vant/dist/icon/index",
 			"van-image": "/wxcomponents/vant/dist/image/index",
-			// "van-steps": "/wxcomponents/vant/dist/steps/index",
+			"van-steps": "/wxcomponents/vant/dist/steps/index",
 			"van-cell-group": "/wxcomponents/vant/dist/cell-group/index",
 			"van-cell": "/wxcomponents/vant/dist/cell/index",
-			// "van-panel": "/wxcomponents/vant/dist/panel/index",
-			// "van-divider": "/wxcomponents/vant/dist/divider/index",
-			// "van-count-down": "/wxcomponents/vant/dist/count-down/index",
-			// "van-notify": "/wxcomponents/vant/dist/notify/index",
-			// "van-action-sheet": "/wxcomponents/vant/dist/action-sheet/index",
-			// "van-datetime-picker": "/wxcomponents/vant/dist/datetime-picker/index",
-			// "van-checkbox": "/wxcomponents/vant/dist/checkbox/index",
-			// "van-checkbox-group": "/wxcomponents/vant/dist/checkbox-group/index",
-			// "van-notice-bar": "/wxcomponents/vant/dist/notice-bar/index",
+			"van-panel": "/wxcomponents/vant/dist/panel/index",
+			"van-divider": "/wxcomponents/vant/dist/divider/index",
+			"van-count-down": "/wxcomponents/vant/dist/count-down/index",
+			"van-notify": "/wxcomponents/vant/dist/notify/index",
+			"van-action-sheet": "/wxcomponents/vant/dist/action-sheet/index",
+			"van-datetime-picker": "/wxcomponents/vant/dist/datetime-picker/index",
+			"van-checkbox": "/wxcomponents/vant/dist/checkbox/index",
+			"van-checkbox-group": "/wxcomponents/vant/dist/checkbox-group/index",
+			"van-notice-bar": "/wxcomponents/vant/dist/notice-bar/index",
 			"van-collapse": "/wxcomponents/vant/dist/collapse/index",
 			"van-collapse-item": "/wxcomponents/vant/dist/collapse-item/index",
 			"van-tabs": "/wxcomponents/vant/dist/tabs/index",
@@ -91,27 +101,27 @@
 		}
 	},
 	"tabBar": {
-		"color": "#000",
-		"selectedColor": "#26A88A",
+		"color": "#000000",
+		"selectedColor": "#00D3C4",
 		"borderStyle": "white",
-		"backgroundColor": "#ffffff",
+		"backgroundColor": "#FFFFFF",
 		"list": [{
 				"pagePath": "pages/index/index",
 				"text": "首页",
-				"iconPath": "static/index/finance.png",
-				"selectedIconPath": "static/index/c-finance.png"
+				"iconPath": "static/tabBar/home.png",
+				"selectedIconPath": "static/tabBar/home-on.png"
 			},
 			{
 				"pagePath": "pages/chat/chat",
 				"text": "通讯",
-				"iconPath": "static/index/life.png",
-				"selectedIconPath": "static/index/c-life.png"
+				"iconPath": "static/tabBar/category.png",
+				"selectedIconPath": "static/tabBar/category-on.png"
 			},
 			{
 				"pagePath": "pages/mine/mine",
 				"text": "我的",
-				"iconPath": "static/index/serve.png",
-				"selectedIconPath": "static/index/c-serve.png"
+				"iconPath": "static/tabBar/user.png",
+				"selectedIconPath": "static/tabBar/user-on.png"
 			}
 		]
 	},

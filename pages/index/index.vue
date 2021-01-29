@@ -1,9 +1,7 @@
 <template>
 	<scroll-view scroll-y="true">
 		<view class="container">
-
 			<van-tabs type="line" border=false sticky style="width: 95%;box-sizing: border-box;">
-
 				<van-tab title="功能展示" style="width: 50%;box-sizing: border-box;">
 					<view class="itemLy-outter">
 						<view class="itemLy" v-for="(item, index) in personalArr" :key="index" @click="handleclick(item)">
@@ -12,12 +10,11 @@
 							</view>
 							<view class="item-text-wrap">
 								<text class="py-4 font-size-16">{{item.text}}</text>
-								<text class="py-4" style="min-height: 66rpx;">{{item.desc}}</text>
+								<text class="py-4" style="min-height: 42rpx;">{{item.desc}}</text>
 							</view>
 						</view>
 					</view>
 				</van-tab>
-
 				<van-tab title="组件展示" style="width: 50%;box-sizing: border-box;">
 					<view class="itemLy-outter">
 						<view class="itemLy" v-for="(item, index) in groupArr" :key="index" @click="handleclick(item)">
@@ -26,18 +23,12 @@
 							</view>
 							<view class="item-text-wrap">
 								<text class="py-4 font-size-16">{{item.text}}</text>
-								<text class="py-4" style="min-height: 66rpx;">{{item.desc}}</text>
+								<text class="py-4" style="min-height: 42rpx;">{{item.desc}}</text>
 							</view>
 						</view>
 					</view>
 				</van-tab>
-
 			</van-tabs>
-
-
-		
-
-		
 		</view>
 	</scroll-view>
 </template>
@@ -49,9 +40,15 @@
 				personalArr: [
 					{
 						text: "签到定位",
-						desc: '签到定位。',
+						desc: '介绍描述...',
 						type: 'xcp',
 						url: "../sign/signup",
+					},
+					{
+						text: "扫码录入",
+						desc: '介绍描述...',
+						type: 'xcp',
+						url: "../scan/scan",
 					},
 					/* {
 						img: require("../../../../static/index/onlineIcon3.png"),
@@ -83,7 +80,7 @@
 
 				groupArr: [	{
 						text: "签名板",
-						desc: '签名板。',
+						desc: '介绍描述...',
 						type: 'xcp',
 						url: "../sign/signatures",
 					}
@@ -97,7 +94,7 @@
 				let that = this
 				if (params.type === 'dev') {
 					uni.showToast({
-						title: '敬请期待！',
+						title: '敬请期待',
 						icon: "none",
 						duration: 2000
 					});
